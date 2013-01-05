@@ -29,7 +29,7 @@ class Kick implements Plugin{
 					console("[INFO] Usage: kick <playername> [reason]");
 				}
 				else {
-					// Kick player with message
+					// Kick player with optional message
 					$name = array_shift($arg);
 					$player = $this->api->player->get($name);
 					if($player === false) {
